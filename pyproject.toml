@@ -4,13 +4,13 @@ version = "0.1.0"
 description = ""
 authors = ["Евгений <prokofev_619@mail.ru>"]
 readme = "README.md"
-packages = [{include = "work_directory"}]
+packages = [{include = "gendiff"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
 
 [tool.poetry.scripts]
-gendiff = "work_directory.scripts.gendiff:main"
+gendiff = "gendiff.scripts.gendiff:main"
 
 
 [build-system]

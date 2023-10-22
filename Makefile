@@ -15,3 +15,6 @@ lint:
 
 gendiff:
 	poetry run gendiff
+
+re-install:
+	pip install --user --force-reinstall dist/*.whl
