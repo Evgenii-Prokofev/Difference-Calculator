@@ -40,4 +40,7 @@ def generate_diff(file1, file2):
     output = ''
     for value in result.values():
         output = f'{output} {value["prefix"]} {value["name"]}: {value["data"]}\n'
-    return f'{{\n{output}}}'
+    result_string = [output]
+    result_string.insert(0, '{\n')
+    result_string.append('}\n')
+    return ''.join(result_string)
