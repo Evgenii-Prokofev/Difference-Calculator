@@ -18,3 +18,6 @@ gendiff:
 
 re-install:
 	pip install --user --force-reinstall dist/*.whl
+
+pytest:
+	poetry run pytest -s
