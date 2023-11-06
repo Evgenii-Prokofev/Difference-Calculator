@@ -39,7 +39,8 @@ def generate_diff(file1, file2):
     result = dict(sorted(data.items()))
     output = ''
     for value in result.values():
-        output = f'{output} {value["prefix"]} {value["name"]}: {value["data"]}\n'
+        output = (f'{output} {value["prefix"]}'
+                  f'{value["name"]}: {value["data"]}\n')
     result_string = [output]
     result_string.insert(0, '{\n')
     result_string.append('}\n')
