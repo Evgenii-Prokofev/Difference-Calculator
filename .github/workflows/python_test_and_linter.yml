@@ -11,6 +11,7 @@ jobs:
     - run: pip install --upgrade pip
     - run: pip install poetry
     - run: pip install pytest-cov
+    - run: make install
     - run: make pytest
     - run: make lint
     - name: Test & publish code coverage
