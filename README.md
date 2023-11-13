@@ -5,3 +5,6 @@
 
 Пример работы программы при сравнении различий в двух файлах json-формата:
 https://asciinema.org/a/ctOGZFxCWC7WqAqZr4w5N9ZaN
+
+Пример работы программы при сравнении различий в двух файлах yaml-формата:
+https://asciinema.org/a/tC5rJaLiBetPCXMutdJO1FdMU
