@@ -8,3 +8,6 @@ https://asciinema.org/a/ctOGZFxCWC7WqAqZr4w5N9ZaN
 
 Пример работы программы при сравнении различий в двух файлах yaml-формата:
 https://asciinema.org/a/tC5rJaLiBetPCXMutdJO1FdMU
+
+Пример работы программы при сравнении различий в двух файлах с вложенной структурой:
+https://asciinema.org/a/mOaBOK7neCFkk2tBIqdN2yEdL

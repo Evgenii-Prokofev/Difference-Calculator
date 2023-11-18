@@ -9,8 +9,8 @@ FILE2 = 'tests/fixtures/file2'
 
 
 @pytest.mark.parametrize("file1, file2, expected", [
-    (f"{FILE0}.json", f"{FILE0}.json", '{\n}\n'),
-    (f"{FILE0}.yml", f"{FILE0}.yaml", '{\n}\n')])
+    (f"{FILE0}.json", f"{FILE0}.json", '{\n\n}'),
+    (f"{FILE0}.yml", f"{FILE0}.yaml", '{\n\n}')])
 def test_with_empty(file1, file2, expected):
     assert generate_diff(file1, file2) == expected
 

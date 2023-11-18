@@ -1,0 +1,16 @@
+{
+  - city: Kazan
+  - country: Russia
+  + country: Canada
+    district: {
+      - cvartal: 35
+      + cvartal: 50
+      - street: {
+            home: 40
+        }
+      + street: Sea breeze
+    }
+  + post box: {
+        number: 800
+    }
+}
