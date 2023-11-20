@@ -11,3 +11,7 @@ https://asciinema.org/a/tC5rJaLiBetPCXMutdJO1FdMU
 
 Пример работы программы при сравнении различий в двух файлах с вложенной структурой:
 https://asciinema.org/a/mOaBOK7neCFkk2tBIqdN2yEdL
+
+Пример работы программы при сравнении различий в двух файлах в плоском формате:
+https://asciinema.org/a/OUDFKNBZvI2kE3Gq4sqsXU5Tr
+
