@@ -12,6 +12,9 @@ https://asciinema.org/a/tC5rJaLiBetPCXMutdJO1FdMU
 Пример работы программы при сравнении различий в двух файлах с вложенной структурой:
 https://asciinema.org/a/mOaBOK7neCFkk2tBIqdN2yEdL
 
-Пример работы программы при сравнении различий в двух файлах в плоском формате:
+Пример работы программы при сравнении различий в двух файлах и вывод результата в плоском формате:
 https://asciinema.org/a/OUDFKNBZvI2kE3Gq4sqsXU5Tr
+
+Пример работы программы при сравнении различий в двух файлах и вывод результата в формате json:
+https://asciinema.org/a/MAlxjluK95AeSCVs3xELvgiM9
 
