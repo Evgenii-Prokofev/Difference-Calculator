@@ -20,13 +20,18 @@ cd python-project-50
 poetry install
 
 Поддерживаемые форматы файлов
+
 Проект поддерживает следующие форматы файлов для поиска отличий:
+
 • YAML (.yaml, .yml)
 • JSON (.json)
 
 Как найти различия между двумя файлами:
-• gendiff path/to/file_1 path/to/file_2 - команда для поиска различий в формате stylish (по умолчанию) 
+
+• gendiff path/to/file_1 path/to/file_2 - команда для поиска различий в формате stylish (по умолчанию)
+ 
 • gendiff --format plain path/to/file_1 path/to/file_2 - команда для поиска различий в формате plain
+
 • gendiff --format json path/to/file_1 path/to/file_2 - команда для поиска различий в формате json
 
 
