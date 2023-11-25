@@ -2,12 +2,13 @@ from gendiff import generate_diff
 import pytest
 
 PATH = 'tests/fixtures/'
+FILE3 = 'tests/fixtures/file3.json'
+FILE4 = 'tests/fixtures/file4.json'
 
 
-def test_plain_json_data():
-    file3 = 'tests/fixtures/file3.json'
-    file4 = 'tests/fixtures/file4.json'
-    with open(PATH + 'result_format_plain.txt', 'r') as expected_file:
+@pytest.mark.parametrize("file1, file2, expected", [
+    (f'{FILE3}', f'{FILE4}', 'result_format_plain.txt'),])
+def test_plain_json_data(file1, file2, expected):
+    with open(PATH + expected, 'r') as expected_file:
         expected_result = expected_file.read()
-    result = generate_diff(file3, file4, formatter='plain')
-    assert result == expected_result
+    assert generate_diff(file1, file2, formatter='plain') == expected_result
