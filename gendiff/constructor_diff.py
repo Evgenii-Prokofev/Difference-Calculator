@@ -1,4 +1,4 @@
-def for_added(key, value):
+def generate_added_descriptor(key, value):
     return {
         'action': 'added',
         'name': key,
@@ -6,7 +6,7 @@ def for_added(key, value):
     }
 
 
-def for_deleted(key, value):
+def generate_deleted_descriptor(key, value):
     return {
         'action': 'deleted',
         'name': key,
@@ -14,7 +14,7 @@ def for_deleted(key, value):
     }
 
 
-def for_unchanged(key, value):
+def generate_unchanged_descriptor(key, value):
     return {
         'action': 'unchanged',
         'name': key,
@@ -22,7 +22,7 @@ def for_unchanged(key, value):
     }
 
 
-def for_modified(key, value1, value2):
+def generate_modified_descriptor(key, value1, value2):
     return {
         'action': 'modified',
         'name': key,
@@ -31,7 +31,7 @@ def for_modified(key, value1, value2):
     }
 
 
-def for_nested(key, value1, value2):
+def generate_nested_descriptor(key, value1, value2):
     return {
         'action': 'nested',
         'name': key,
@@ -51,15 +51,15 @@ def constructor_diff(data1, data2):
         value2 = data2.get(key)
 
         if key in added:
-            diff.append(for_added(key, value2))
+            diff.append(generate_added_descriptor(key, value2))
         elif key in deleted:
-            diff.append(for_deleted(key, value1))
+            diff.append(generate_deleted_descriptor(key, value1))
         elif isinstance(value1, dict) and isinstance(value2, dict):
-            diff.append(for_nested(key, value1, value2))
+            diff.append(generate_nested_descriptor(key, value1, value2))
         elif value1 != value2:
-            diff.append(for_modified(key, value1, value2))
+            diff.append(generate_modified_descriptor(key, value1, value2))
         else:
-            diff.append(for_unchanged(key, value1))
+            diff.append(generate_unchanged_descriptor(key, value1))
 
     sorted_diff = sorted(diff, key=lambda x: x['name'])
 

@@ -50,5 +50,5 @@ def make_stylish(diff, spaces_count=2):  # noqa: C901
     return f"{{\n{formatted_result}\n{end_indent}}}"
 
 
-def formatter_stylish(data):
-    return make_stylish(data)
+def format_stylish(diff):
+    return make_stylish(diff)
