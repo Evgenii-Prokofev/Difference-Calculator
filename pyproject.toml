@@ -5,6 +5,14 @@ description = "App compares two files (JSON or YAML) and shows the difference be
 authors = ["Евгений <prokofev_619@mail.ru>"]
 readme = "README.md"
 packages = [{include = "gendiff"}]
+classifiers = [
+    "Programming Language :: Python :: ^3.10",
+    "Development Status :: 5 - Production/Stable",
+    "Natural Language :: English",
+    "Intended Audience :: Education",
+    "Operating System :: Unix",
+    "Topic :: Utilities"
+]
 
 [tool.poetry.dependencies]
 python = "^3.10"
